@@ -3,7 +3,7 @@
 來源：
   SRC = 金屬扣件智慧製造與AI生產優化實務班_網頁簡報.html（123 頁）
   MK  = mktech-ai-course 的 index.html（只取第 1 頁封面）
-結果：封面（取自 MK）＋ SRC 第 24–56 頁，共 34 頁，寫到 ../index.html。
+結果：封面（取自 MK）＋ SRC 第 24–58 頁，共 36 頁，寫到 ../index.html。
 
 用法：python -I -X utf8 build.py <SRC> <MK>
 """
@@ -22,7 +22,7 @@ src_secs = SEC.findall(src)
 mk_secs = SEC.findall(mk)
 assert len(src_secs) == 123, len(src_secs)
 
-FIRST, LAST = 24, 56  # 原簡報頁碼（1 起算，含頭尾）
+FIRST, LAST = 24, 58  # 原簡報頁碼（1 起算，含頭尾）
 body = src_secs[FIRST - 1:LAST]
 assert len(body) == LAST - FIRST + 1
 
@@ -58,7 +58,7 @@ assert tail.count("'｜金屬扣件智慧製造與AI生產優化實務班'") == 
 tail = tail.replace("'｜金屬扣件智慧製造與AI生產優化實務班'", "'｜行銷科技與數據分析'")
 
 html = head + cover + '\n' + '\n'.join(body) + tail
-assert html.count('<section') == 34
+assert html.count("<section") == 36
 out_path.write_text(html, encoding='utf-8')
 print('pages', html.count('<section'), 'bytes', len(html.encode('utf-8')), 'ls-prefix replaced in tail', tail_n)
 for k, s in enumerate([cover] + body, 1):

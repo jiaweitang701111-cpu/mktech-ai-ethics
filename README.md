@@ -1,6 +1,6 @@
 # 行銷科技與數據分析（115 學年度）｜AI倫理、資安與法規網頁簡報
 
-從「金屬扣件智慧製造與AI生產優化實務班」網頁簡報（123 頁）擷取第 24–56 頁（第二部份：AI倫理、資安與法規），封面改用 [mktech-ai-course](https://jiaweitang701111-cpu.github.io/mktech-ai-course/) 的封面，共 34 頁。
+從「金屬扣件智慧製造與AI生產優化實務班」網頁簡報（123 頁）擷取第 24–58 頁（第二部份：AI倫理、資安與法規，含結語與參考資料），封面改用 [mktech-ai-course](https://jiaweitang701111-cpu.github.io/mktech-ai-course/) 的封面，共 36 頁。
 
 - 線上網址：https://jiaweitang701111-cpu.github.io/mktech-ai-ethics/
 - `index.html`：成品，單一檔案，可直接用瀏覽器開啟（離線可用）。
@@ -23,6 +23,6 @@
 | 原簡報 | 本簡報 |
 |------|------|
 | — （mktech-ai-course 封面） | 1 |
-| 24–56 | 2–34 |
+| 24–58 | 2–36 |
 
 互動演練：第 13 頁（10 份資料能不能丟給 AI）、第 28 頁（先遮蔽資訊再請 AI 翻譯）。
