@@ -57,6 +57,25 @@ head = head.replace("'fastener-ai:'", "'mktech-ethics:'")
 assert tail.count("'｜金屬扣件智慧製造與AI生產優化實務班'") == 1
 tail = tail.replace("'｜金屬扣件智慧製造與AI生產優化實務班'", "'｜行銷科技與數據分析'")
 
+# 情境改寫：扣件廠 → 社群行銷、數據分析與零售流通（內容見 scenario.py）
+import runpy
+sc = runpy.run_path(str(Path(__file__).resolve().parent / 'scenario.py'))
+miss = []
+for page, pairs in sc['PAGE'].items():
+    k = page - 2  # body[0] 是本簡報第 2 頁
+    for old, new in pairs:
+        if old not in body[k]:
+            miss.append((page, old))
+        body[k] = body[k].replace(old, new)
+for old, new in sc['JS']:
+    if old not in tail:
+        miss.append(('JS', old))
+    tail = tail.replace(old, new)
+if miss:
+    for m in miss:
+        print('MISS', *m)
+    sys.exit(1)
+
 html = head + cover + '\n' + '\n'.join(body) + tail
 assert html.count("<section") == 36
 out_path.write_text(html, encoding='utf-8')

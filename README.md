@@ -2,9 +2,11 @@
 
 從「金屬扣件智慧製造與AI生產優化實務班」網頁簡報（123 頁）擷取第 24–58 頁（第二部份：AI倫理、資安與法規，含結語與參考資料），封面改用 [mktech-ai-course](https://jiaweitang701111-cpu.github.io/mktech-ai-course/) 的封面，共 36 頁。
 
+原簡報以金屬扣件廠為例的情境（第 5、9、11、12、14、17、18、22、23、26、27、29、31–33 頁，以及兩個互動演練）已改寫為社群行銷、數據分析與零售流通情境；第 2 頁的「第二部份」改為英文副標。改寫內容集中在 `tools/scenario.py`。
+
 - 線上網址：https://jiaweitang701111-cpu.github.io/mktech-ai-ethics/
 - `index.html`：成品，單一檔案，可直接用瀏覽器開啟（離線可用）。
-- `tools/build.py`：重組腳本（`python -I -X utf8 tools/build.py <原簡報.html> <mktech index.html>`）。
+- `tools/build.py`：重組腳本（會套用 `tools/scenario.py` 的情境改寫；`python -I -X utf8 tools/build.py <原簡報.html> <mktech index.html>`）。
 
 ## 操作
 
@@ -25,4 +27,4 @@
 | — （mktech-ai-course 封面） | 1 |
 | 24–58 | 2–36 |
 
-互動演練：第 13 頁（10 份資料能不能丟給 AI）、第 28 頁（先遮蔽資訊再請 AI 翻譯）。
+互動演練：第 13 頁（10 份行銷與零售資料能不能丟給 AI）、第 28 頁（先遮蔽採購詢價信的資訊，再請 AI 翻成英文回覆）。
