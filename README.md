@@ -6,6 +6,7 @@
 
 - 線上網址：https://jiaweitang701111-cpu.github.io/mktech-ai-ethics/
 - `index.html`：成品，單一檔案，可直接用瀏覽器開啟（離線可用）。
+- `share/QRcode.png`：掃碼開啟線上簡報（820×820，指向上方線上網址）。
 - `tools/build.py`：重組腳本（會套用 `tools/scenario.py` 的情境改寫；`python -I -X utf8 tools/build.py <原簡報.html> <mktech index.html>`）。
 
 ## 操作
